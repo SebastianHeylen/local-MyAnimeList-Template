@@ -148,6 +148,10 @@ p {
   width: 100%;
 }
 
+.entry img:hover {
+  opacity: 0.5;
+}
+
 .entry p {
   text-transform: capitalize;
   background: #dddddd;
