@@ -21,7 +21,7 @@
                     <ul>
                         <li><a href="index.html">home</a></li>
                         <li><a href="#">add to database</a></li>
-                        <li><a href="#">Write post</a></li>
+                        <li><a href="#">blog</a></li>
                         <li><a href="#">about</a></li>
                     </ul>
                 </nav>
@@ -41,13 +41,35 @@
             <ul class="tabs">
                 <li class="tab-link current" data-tab="tab-1">Anime List</li>
                 <li class="tab-link" data-tab="tab-2">Manga List</li>
-                <li class="tab-link" data-tab="tab-3">fav animes</li>
-                <li class="tab-link" data-tab="tab-4">fav mangas</li>
-                <li class="tab-link" data-tab="tab-5">fav voice actor</li>
-                <li class="tab-link" data-tab="tab-6">fav voice acteress</li>
+                <li class="tab-link" data-tab="tab-5">favourite characters</li>
+                <li class="tab-link" data-tab="tab-6">waifu list</li>
                 <li class="tab-link" data-tab="tab-5">fav mangeka</li>
             </ul>
             <div class="mylist tab-content" id="tab-1">
+                <section class="entry">
+                    <a href="">
+                        <img src="http://via.placeholder.com/200x200">
+                    </a>
+                    <p>Boku no Hero Academia 2nd Season</p>
+                </section>
+                <section class="entry">
+                    <a href="">
+                        <img src="http://via.placeholder.com/200x200">
+                    </a>
+                    <p>anime title</p>
+                </section>
+                <section class="entry">
+                    <a href="">
+                        <img src="http://via.placeholder.com/200x200">
+                    </a>
+                    <p>anime title</p>
+                </section>
+                <section class="entry">
+                    <a href="">
+                        <img src="http://via.placeholder.com/200x200">
+                    </a>
+                    <p>anime title</p>
+                </section>
                 <section class="entry">
                     <a href="">
                         <img src="http://via.placeholder.com/200x200">
@@ -101,7 +123,7 @@
                 </ul>
             </section>
             <section class="footer-block">
-                <h3>characters</h3>
+                <h3>favourite voice actors</h3>
                 <ul>
                     <li><a href="#">anime 1</a></li>
                     <li><a href="#">anime 2</a></li>
@@ -111,7 +133,7 @@
                 </ul>
             </section>
             <section class="footer-block">
-                <h3>people</h3>
+                <h3>favourite voice actresses</h3>
                 <ul>
                     <li><a href="#">anime 1</a></li>
                     <li><a href="#">anime 2</a></li>
@@ -126,20 +148,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function(){
-
-        $('.tabs li').click(function(){
-            var tab_id = $(this).attr('data-tab');
-
-            $('.tabs li').removeClass('current');
-            $('.tab-content').removeClass('current');
-
-            $(this).addClass('current');
-            $("#"+tab_id).addClass('current');
-        })
-
-    })
-</script>
+<script src="custom.js"></script>
 </body>
 </html>
